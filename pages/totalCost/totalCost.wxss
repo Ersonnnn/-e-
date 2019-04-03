@@ -1,0 +1,9 @@
+/* pages/totalCost/totalCost.wxss */
+.content{
+  font-family: 微软雅黑;
+  font-size: 14px;
+  background-size: cover;
+  height:100%;
+  width:100%;
+  color:#333333;
+}

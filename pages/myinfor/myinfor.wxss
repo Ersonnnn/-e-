@@ -1,0 +1,69 @@
+/* pages/myinfor/myinfor.wxss */
+page{
+  background-color: #dddddd;
+}
+
+.jx_card{
+  width: 100%;
+  height: 320rpx;
+  background:#ffffff;
+  position: relative;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-button{
+  margin: 160rpx;
+}
+
+.userinfo-avatar {
+  width: 180rpx;
+  height: 180rpx;
+  margin: 50rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  position: fixed;
+  margin-top:90rpx;
+  color: black;
+}
+
+.userinfo-grade{
+   position:fixed;
+   margin-top:200rpx;
+   color:black;
+   font-size: 12px;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.card{
+  position: relative;
+  margin-top:20rpx;
+  background: white;
+  width:100%;
+  height:296rpx;
+}
+.jx-box{
+  height:100rpx;
+  width:100%;
+  box-sizing: border-box; 
+  align-items: center;
+  padding:25rpx;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.account-box{
+  align-items: center;
+  padding:20rpx;
+}
+.account{
+  font-size:14px;
+}

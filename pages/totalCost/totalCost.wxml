@@ -1,0 +1,7 @@
+<!--pages/totalCost/totalCost.wxml-->
+<view class="content">
+  <view>{{object.key}}{{array[0]}}</view>
+</view>
+<view wx:for="{{array}}">
+		{{ index }}:{{ item.othertest}}
+</view>

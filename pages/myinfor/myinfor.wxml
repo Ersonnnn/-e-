@@ -1,0 +1,37 @@
+<!--pages/myinfor/myinfor.wxml-->
+
+<view class="userinfo">
+  <block>
+    <view class="jx_card">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <text class="userinfo-grade">积分：{{grade}}</text>
+    </view>
+  </block>
+</view>
+
+
+ <view class="jx-box">
+   <navigator url="../gradeback/gradeback"> 
+      <text class="jx-text" >积分兑换</text>
+   </navigator>
+ </view>
+ <view class="jx-box">
+   <navigator url="../donelist/donelist"> 
+      <text class="jx-text" >已完成的日计划</text>
+   </navigator>
+ </view>
+  <view class="jx-box">
+   <navigator url="../feedback/feedback"> 
+      <text class="jx-text" >用户反馈</text>
+   </navigator>
+ </view>
+
+<view class="card">
+  <view class="account-box">
+    <text class="account">
+      积分规则：\n每天9:00点前签到可获得5积分，积分可以兑换首页背景。
+    </text>
+  </view>
+</view>
+
