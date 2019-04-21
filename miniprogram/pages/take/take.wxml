@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="initbut"> 确认授权 </button>
+    <block wx:elif="{{!isLogin}}">
+      <view class="title">用户须知\n</view>
+      <checkbox-group bindchange="checkboxChange"> 
+        <label class="checkbox" wx:for="{{items}}">
+          <checkbox value="{{item.name}}" checked="{{item.checked}}" /> {{item.value}}
+        </label>
+      </checkbox-group>
+      <button wx:if="{{isAll}}" bindtap="addPassenger" class="agreebut"> 同意并开通 </button>
+    </block>
+    <block wx:else>
+      <button bindtap='getScancode'>点击扫码</button>
+      <view>上车站:{{up_subname}}</view>
+      <view>下车站:{{down_subname}}</view>
+    </block>
+
+
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

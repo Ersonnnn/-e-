@@ -1,0 +1,33 @@
+<input wx:if="{{startAddress==''}}" bindinput="getStart" placeholder="当前位置（请输入起点）" />
+<input wx:else bindinput="getStart" value="{{startAddress}}" />
+<block wx:if="{{!showFrom}}">
+  <scroll-view scroll-y="true">
+    <view wx:for="{{searchData}}" wx:key='this'>
+      <view class="address" bindtap="fromWhere" id="{{index}}">
+        <view>{{item.title}}</view>
+        <view class="font">{{item.address}}</view>
+        <view class="font">{{item.category}}</view>
+      </view>
+    </view>
+  </scroll-view>
+</block>
+<input wx:if="{{endAddress==''}}" bindinput="getEnd" placeholder="请输入终点" />
+<input wx:else bindinput="getEnd" value="{{endAddress}}" />
+<block wx:if="{{!showTo}}">
+  <scroll-view scroll-y="true">
+    <view wx:for="{{searchData}}" wx:key='this'>
+      <view class="address" bindtap="toWhere" id="{{index}}">
+        <view>{{item.title}}</view>
+        <view class="font">{{item.address}}</view>
+        <view class="font">{{item.category}}</view>
+      </view>
+    </view>
+  </scroll-view>
+</block>
+<button bindtap="searchRoad" disabled='{{openNav}}'>查询</button>
+
+<map wx:if="{{!searchBus}}" id="myMap" style="width: 100%; height: 300px;" longitude="{{startLng}}" latitude="{{startLat}}" polyline="{{polyline}}" markers="{{markers}}" show-location></map>
+
+<block wx:else>
+  <view>公交线路</view>
+</block>

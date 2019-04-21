@@ -1,0 +1,50 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.initbut{
+  margin-top: 40%;
+  width:600rpx;
+  height:90rpx;
+  background:#339933;
+  border-radius:8rpx;
+  font-size:32rpx;
+  color:rgba(255, 255, 255, 1);
+  font-family:微软雅黑;
+  font-weight: bold;
+}
+
+.agreebut{
+  margin-top: 10%;
+  width:600rpx;
+  height:90rpx;
+  background:#339933;
+  border-radius:8rpx;
+  font-size:32rpx;
+  color:rgba(255, 255, 255, 1);
+  font-family:微软雅黑;
+  font-weight: bold;
+}
+
+.title{
+  margin-top:30%;
+  font-size: 48rpx;
+}
